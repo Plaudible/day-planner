@@ -1,0 +1,41 @@
+public class Day{
+  private String event;
+  private String name;
+  private int time;
+  public Day(){
+
+  }
+  public Day(String n, int t, String e){
+    time = t;
+    name = n;
+    event = e;
+  }
+  
+  public String getName(){
+   return name; 
+  }
+  
+  public void setEvent(String e){
+   event = e; 
+  }
+  
+  public int getTime(){
+   return time; 
+  }
+   
+  public void setTime(int t){
+   time = t; 
+  }
+  
+  
+  public String toString(){
+    String str = (time+event);
+    return str;
+  }
+
+
+   public String toString2(){
+    String str = (time+" - "+event);
+    return str;
+  }
+}
